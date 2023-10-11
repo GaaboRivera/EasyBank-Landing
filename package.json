@@ -1,0 +1,15 @@
+{
+  "name": "landing-page-bank",
+  "version": "1.0.0",
+  "description": "Landing con Tailwind responsiva",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scantailwind": "npx tailwindcss -i ./src/css/config.css -o ./src/css/estilos.css --watch"
+  },
+  "author": "Gabriel Rivera",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
