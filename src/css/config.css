@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .wrapper {
     @apply w-[90%] mx-auto overflow-hidden max-w-screen-xl;
+  }
+  .button {
+    @apply bg-gradient-to-b from-[#33D35E] to-[#2AB6D9] block w-max py-2 px-9 rounded-full;
+  }
+
+  .footer-area {
+    grid-template-areas:
+      "logo"
+      "social-media"
+      "navigation"
+      "button"
+      "copy";
+  }
+  .footer-area-md {
+    grid-template-areas:
+      "logo         navigation  button"
+      "social-media navigation  copy";
   }
 }
